@@ -10,21 +10,21 @@ html {
 .header__background {
   position: relative;
   width: 100%;
-  height: 655px;
+  height: 500px;
   background-color: #4a454b;
+  padding-top: 44px;
+  z-index: 10;
+  margin-bottom: 320px;
+}
+.header__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 44px;
-  z-index: 1;
-}
-.header-container {
-  display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper {
-  width: 1100px;
+  width: 1170px;
   margin: 0 auto;
 }
 .header-menu {
@@ -32,10 +32,12 @@ html {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 120px;
+  width: 1030px;
 }
 .header-menu__header-logo {
   margin: 0;
   padding: 0;
+  width: ;
 }
 .header-menu__logo {
   display: flex;
@@ -47,7 +49,7 @@ html {
 
 .logo-leaf {
   height: 60px;
-  width: 55px;
+  width: 54px;
   background-image: url(../img/leaf-logo.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,9 +62,9 @@ html {
 .logo-image-word__image {
   background-image: url(../img/envato.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 166px;
   width: 166px;
-  height: 37px;
+  height: 40px;
 }
 .logo-image-word__word {
   height: 20px;
@@ -91,20 +93,23 @@ html {
   border: 2px solid #90d23d;
   border-radius: 15px;
 }
-/* .header__angle-frame {
-  background-color: #4a454b;
+.angle {
+  height: 600px;
   width: 100%;
-  height: 125px;
-} */
+  background-color: #4a454b;
+  transform: skew(0deg, -5deg);
+}
 .header__angle {
-  top: 700px;
-  position: relative;
+  top: 100px;
+  position: absolute;
+  z-index: 9;
 }
 .header__under-angle {
   position: relative;
   background-color: #ffffff;
   z-index: 10;
   height: 400px;
+  top: 600px;
 }
 
 .header__angle-icon {
@@ -164,11 +169,34 @@ html {
 /* MAIN */
 .welcome {
   height: 1650px;
-  width: 100%;
+  position: relative;
+  z-index: 12;
 }
-.angle {
-  height: 600px;
-  width: 100%;
-  background-color: #4a454b;
-  transform: skew(0deg, -5deg);
+.welcome__block {
+  margin-bottom: 145px;
+}
+.welcome__text {
+  width: 530px;
+  height: 190px;
+}
+.about-us {
+  width: 1030px;
+  height: 372px;
+  margin-bottom: 95px;
+}
+.list {
+  list-style: none;
+}
+.about-us__list {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us__text {
+  width: 300px;
+}
+.table {
+  width: 1030px;
+  height: 380px;
+  border-radius: 15px;
+  background-color: #111111;
 }
