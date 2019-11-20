@@ -164,14 +164,13 @@ html {
   height: 400px;
   width: 100%;
 }
-.header__form {
+.sign-up__form {
   height: 530px;
   width: 430px;
   position: absolute;
   z-index: 11;
   left: 670px;
-  top: -160px;
-  transform: skew(0deg, 5deg);
+  top: -300px;
   border: solid 1px #dbdada;
   background: #ffffff;
   display: flex;
